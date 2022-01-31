@@ -1,0 +1,30 @@
+<%- include partials/header.ejs %>
+<div class="container">
+  <h1>Compose</h1>
+  <form action="/compose" method="post">
+    <div class="form-group">
+      <label for="exampleFormControlInput1" class="form-labe" l>Title</label>
+      <input
+        type="text"
+        class="form-control"
+        id="exampleFormControlInput1"
+        name="title"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="exampleFormControlTextarea1" class="form-label">Post</label>
+      <textarea
+        name="body"
+        class="form-control"
+        id="exampleFormControlTextarea1"
+        rows="3"
+      ></textarea>
+    </div>
+    <div class="col-12">
+      <button type="submit" name="submit" class="btn btn-primary">
+        Publish
+      </button>
+    </div>
+  </form>
+</div>
+<%- include partials/footer.ejs %>
